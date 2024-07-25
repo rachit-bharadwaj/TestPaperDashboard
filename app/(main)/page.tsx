@@ -17,7 +17,7 @@ export default function Home() {
       </div>
 
       <div className="w-1/3">
-        <div className="flex flex-wrap gap-5">
+        <div className="flex flex-wrap gap-5 lg:flex-nowrap">
           <Balance />
           <Storage />
         </div>

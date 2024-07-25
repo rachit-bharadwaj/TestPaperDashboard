@@ -10,6 +10,7 @@ export default function Storage() {
         alt="dummy storage"
         width={500}
         height={500}
+        className="w-28 h-full"
       />
 
       <button className="border-primary-200 border text-primary-200 p-3 rounded-full">
