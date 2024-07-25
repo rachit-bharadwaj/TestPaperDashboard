@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 
 // components
-import { Balance, RunningFrames, RunningJobs } from "@/components/dashboard";
+import {
+  Balance,
+  RunningFrames,
+  RunningJobs,
+  Storage,
+} from "@/components/dashboard";
 
 export default function Home() {
   return (
@@ -12,7 +17,10 @@ export default function Home() {
       </div>
 
       <div className="w-1/3">
-        <Balance />
+        <div className="flex flex-wrap gap-5">
+          <Balance />
+          <Storage />
+        </div>
       </div>
     </main>
   );

@@ -5,7 +5,7 @@ export default function RunningFrames() {
   return (
     <section className="p-5 bg-white border rounded-xl flex flex-col gap-5">
       <div className="flex justify-between">
-        <p className="text-xl">Running Frames</p>
+        <p className="text-xl font-semibold">Running Frames</p>
 
         <div className="flex items-center gap-1">
           <p>This week</p>
