@@ -66,4 +66,8 @@
   body {
     @apply bg-background text-foreground;
   }
+  .custom-tooltip {
+    @apply bg-black text-white p-2 rounded;
+  }
+  
 }
