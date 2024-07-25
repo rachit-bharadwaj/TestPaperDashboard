@@ -1,9 +1,9 @@
-import { ComponentType, SVGProps } from "react";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 declare global {
-  export type navItem = {
+  export type NavItem = {
     name: string;
     href: string;
-    Icon: string | ComponentType<SVGProps<SVGSVGElement>>;
+    icon: string | StaticImport;
   };
 }

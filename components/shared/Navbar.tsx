@@ -56,7 +56,7 @@ export default function Navbar() {
               <hr className="h-0 bg-transparent border-gray-500 mt-5" />
             </div>
             <div className="flex flex-col">
-              {navRedirects.map((item) => (
+              {navRedirects.map((item: NavItem) => (
                 <SheetClose key={item.name} asChild>
                   <Link
                     key={item.name}
@@ -85,7 +85,7 @@ export default function Navbar() {
 
       <div className="hidden md:flex flex-col text-gray-400 p-5 h-screen pt-20 justify-between pr-20 bg-primary-400 w-fit rounded-r-3xl">
         <div className="flex flex-col gap-1">
-          {navPages.map((item) => (
+          {navPages.map((item: NavItem) => (
             <Link
               key={item.name}
               href={item.href}
