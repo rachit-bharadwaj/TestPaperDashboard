@@ -1,3 +1,8 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+
 // icons
 import { HiMenu } from "react-icons/hi";
 
@@ -9,11 +14,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { navPages, navRedirects } from "@/constants";
-import Link from "next/link";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const path = usePathname();
+
   return (
     <nav className="bg-primary-400">
       {/* mobile screen */}
@@ -32,7 +37,7 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   className={`flex items-center gap-2 p-3 hover:bg-primary-300 rounded-lg ${
-                    item.href === "/" ? "bg-primary-200 text-white" : ""
+                    item.href === path ? "bg-primary-200 text-white" : ""
                   }`}
                 >
                   <Image
