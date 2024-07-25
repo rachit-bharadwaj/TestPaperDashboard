@@ -6,4 +6,10 @@ declare global {
     href: string;
     icon: string | StaticImport;
   };
+
+  export type RunningStats = {
+    name: string;
+    icon: string | StaticImport;
+    count: number;
+  };
 }

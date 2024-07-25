@@ -58,3 +58,26 @@ export const navRedirects = [
     icon: "/icons/ticket.svg",
   },
 ];
+
+export const runningStats = [
+  {
+    name: "Rendering Jobs",
+    icon: "/icons/monitor.svg",
+    count: 14,
+  },
+  {
+    name: "Waiting Jobs",
+    icon: "/icons/timer.svg",
+    count: 14,
+  },
+  {
+    name: "Completed Jobs",
+    icon: "/icons/thumb.svg",
+    count: 14,
+  },
+  {
+    name: "Failed Jobs",
+    icon: "/icons/failed.svg",
+    count: 14,
+  },
+];

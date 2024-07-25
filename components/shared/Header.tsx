@@ -14,7 +14,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="p-5 border-b flex justify-between items-center">
+    <header className="p-5 border-b  bg-white flex justify-between items-center">
       <DropdownMenu>
         <DropdownMenuTrigger className="flex gap-1 items-center outline-none">
           <p>Default Project</p>

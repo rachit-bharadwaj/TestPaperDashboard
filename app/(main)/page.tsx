@@ -1,8 +1,14 @@
+import { RunningFrames, RunningJobs } from "@/components/dashboard";
 import type { Metadata } from "next";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen text-3xl flex-col items-center p-24"></main>
+    <main className="p-5 min-h-screen">
+      <div className="flex flex-col gap-5">
+        <RunningJobs />
+        <RunningFrames />
+      </div>
+    </main>
   );
 }
 
