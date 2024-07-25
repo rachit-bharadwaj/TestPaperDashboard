@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 
 // components
 import {
+  ActiveJobs,
   Balance,
+  Chart,
   RunningFrames,
   RunningJobs,
   Storage,
@@ -14,9 +16,12 @@ export default function Home() {
       <div className="flex flex-col gap-5 w-2/3">
         <RunningJobs />
         <RunningFrames />
+        <ActiveJobs />
       </div>
 
       <div className="w-1/3">
+        <Chart />
+
         <div className="flex flex-wrap gap-5 lg:flex-nowrap">
           <Balance />
           <Storage />
