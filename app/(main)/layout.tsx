@@ -12,7 +12,7 @@ export default function MainLayout({
     <div className="flex h-screen overflow-hidden">
       <Navbar />
 
-      <div className="flex flex-1 flex-col gap-5 overflow-y-auto h-fit bg-[#f5f6f6]">
+      <div className="flex flex-1 flex-col gap-5 overflow-auto bg-[#f5f6f6]">
         <Header />
 
         {children}

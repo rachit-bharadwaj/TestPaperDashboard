@@ -18,7 +18,7 @@ export default function RunningFrames() {
         </div>
       </div>
 
-      <div className="flex justify-between gap-5">
+      <div className="flex justify-between gap-5 flex-wrap">
         {runningStats.map((item: RunningStats) => (
           <div key={item.name} className="flex flex-col gap-2">
             <div className="p-2 bg-primary-100 rounded-full w-fit">
