@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 // components
-import { Navbar } from "@/components/shared";
+import { Header, Navbar } from "@/components/shared";
 
 export default function MainLayout({
   children,
@@ -9,9 +9,14 @@ export default function MainLayout({
   children: ReactNode;
 }>) {
   return (
-    <>
+    <div className="flex h-screen overflow-hidden">
       <Navbar />
-      {children}
-    </>
+
+      <div className="flex flex-1 flex-col gap-5 overflow-y-auto h-fit bg-[#f5f6f6]">
+        <Header />
+
+        {children}
+      </div>
+    </div>
   );
 }
